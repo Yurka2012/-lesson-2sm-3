@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./icomoon-v1.0/style.css">
     <link rel="stylesheet" href="./icomoon-v1.0/fonts">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <p class="webstudio" style="font-family: 'Raleway';font-size:26px;"><span style="color: #2196F3;">Web</span><span>Studio</span></p>
+        <p class="webstudio" style="font-family: 'Raleway';font-size:26px;"><span
+                style="color: #2196F3;">Web</span><span>Studio</span></p>
         <ul>
             <li class="list-item">Студія</li>
             <li class="list-item">Портфоліо</li>
             <li class="list-item">Контакти</li>
         </ul>
+        <ul style="margin-left: 500px;">
+            <li class="list-item">
+                <a href="mailto:info@devstudio.com"><i class="icon icon-envelope"></i> info@devstudio.com</a>
+            </li>
+            <li class="list-item"> <a href="callto:+38 096 111 11 11"> <i class="icon icon-mobile"></i> +38 096 111 11
+                    11</a> </li>
+        </ul>
         <style>
             header {
+                display: flex;
                 position: fixed;
+                align-items: center;
             }
-            ul{
+
+            ul {
                 display: flex;
             }
-.list-item {
-    list-style: none;
-    margin: 50px;
-}
-.list-item:{
-    color: #2196F3;
-}
+
+            .list-item {
+                list-style: none;
+                margin: 50px;
+            }
+
+            .list-item:hover {
+                color: #2196F3;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #2196F3;
+            }
         </style>
-        <ul>
-        </ul>
     </header>
+    <br /><br /><br /><br />
+    <main>
+        <br/>
+        <div class="buttons">
+            <p class="but">Усі</p>
+            <p class="but">Веб-сайти</p>
+            <p class="but">Додатки</p>
+            <p class="but">Дизайн</p>
+            <p class="but">Маркетинг</p>
+        </div>
+        <style>
+            .buttons {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                margin-left: 35%;
+            }
+            .buttons>p{
+                margin-left: 20px;
+            }
+            .but {
+                background: #F5F4FA;
+                border-radius: 4px;
+                /* margin-left: 20px; */
+            }
+
+
+            .but:hover {
+                background: #2196F3;
+                /* margin-left: 20px; */
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                border-radius: 4px;
+            }
+        </style>
+    </main>
 </body>
+
 </html>
