@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="background-color: white;height: 20px;">
         <p class="webstudio" style="font-family: 'Raleway';font-size:26px;"><span
                 style="color: #2196F3;">Web</span><span>Studio</span></p>
         <ul>
@@ -20,7 +20,7 @@
             <li class="list-item">Портфоліо</li>
             <li class="list-item">Контакти</li>
         </ul>
-        <ul style="margin-left: 500px;">
+        <ul style="margin-left: 50px;">
             <li class="list-item">
                 <a href="mailto:info@devstudio.com"><i class="icon icon-envelope"></i> info@devstudio.com</a>
             </li>
@@ -59,13 +59,22 @@
     </header>
     <br /><br /><br /><br />
     <main>
-        <br/>
+        <br />
         <div class="buttons">
-            <p class="but">Усі</p>
-            <p class="but">Веб-сайти</p>
-            <p class="but">Додатки</p>
-            <p class="but">Дизайн</p>
-            <p class="but">Маркетинг</p>
+            <button>
+                <p class="but">Усі</p>
+                <button>
+                    <p class="but">Веб-сайти</p>
+                </button>
+                <button>
+                    <p class="but">Додатки</p>
+                </button>
+                <button>
+                    <p class="but">Дизайн</p>
+                </button>
+                <button>
+                    <p class="but">Маркетинг</p>
+                </button>
         </div>
         <style>
             .buttons {
@@ -74,23 +83,124 @@
                 align-items: center;
                 margin-left: 35%;
             }
-            .buttons>p{
+
+            .buttons>p {
                 margin-left: 20px;
+                margin-top: 0;
             }
-            .but {
+
+            .buttons>button {
                 background: #F5F4FA;
                 border-radius: 4px;
                 /* margin-left: 20px; */
             }
 
 
-            .but:hover {
+            .buttons>button:hover {
                 background: #2196F3;
                 /* margin-left: 20px; */
                 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
                 border-radius: 4px;
             }
         </style>
+        <ul style="display: grid;" class="ul">
+            <style>
+                li{
+                    list-style-type: none;
+                }
+                .ul{
+                    grid-template-columns: repeat(3, 370px);
+                }
+                .ul{
+                    grid-column-gap: 30px;
+                    grid-row-gap: 30px;
+                }
+                .card{
+                    border: 1px solid;
+                }
+            </style>
+            <li>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <div>
+                        <h3>Технокряк</h3>
+                        <p>Веб Веб-сайт</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/2.png" alt="">
+                    <div>
+                        <h3>Постер New Orlean vs Golden Star</h3>
+                        <p>Дизайн</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/3.png" alt="">
+                    <div>
+                        <h3>Ресторан Seafood</h3>
+                        <p>Додаток</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/4.png" alt="">
+                    <div>
+                        <h3>Проекст Prime</h3>
+                        <p>Маркетинг</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/5.png" alt="">
+                    <div>
+                        <h3>Boxes</h3>
+                        <p>Додаток</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/6.png" alt="">
+                    <div>
+                        <h3>Inspiration has no Borders</h3>
+                        <p>Веб-сайт</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/7.png" alt="">
+                    <div>
+                        <h3>LIMITED EDITION</h3>
+                        <p>Дизайн</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/8.png" alt="">
+                    <div>
+                        <h3>ПроЄКт LAB</h3>
+                        <p>Маркетинг</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="./img/9.png" alt="">
+                    <div>
+                        <h3>GROWING BUSINESS</h3>
+                        <p>Додаток</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </main>
 </body>
 
