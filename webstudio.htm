@@ -105,98 +105,239 @@
         </style>
         <ul style="display: grid;" class="ul">
             <style>
-                li{
+                li {
                     list-style-type: none;
                 }
-                .ul{
+
+                .ul {
                     grid-template-columns: repeat(3, 370px);
                 }
-                .ul{
+
+                .ul {
                     grid-column-gap: 30px;
                     grid-row-gap: 30px;
                 }
-                .card{
+
+                .card {
                     border: 1px solid;
                 }
             </style>
             <li>
                 <div class="card">
-                    <img src="./img/1.png" alt="">
-                    <div>
-                        <h3>Технокряк</h3>
-                        <p>Веб Веб-сайт</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/1.png" alt="">
+                            <div>
+                                <h3>Технокряк</h3>
+                                <p>Веб Веб-сайт</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                                <style>
+                                    .wrapper {
+                                        box-sizing: border-box;
+
+                                        width: 370px;
+                                        height: 404px;
+
+                                        background-color: #ffffff;
+                                        border: 1px solid #eeeeee;
+                                        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                                            1px 4px 6px rgba(0, 0, 0, 0.16);
+                                    }
+
+                                    .text-wrapper {
+                                        position: relative;
+                                        overflow: hidden;
+                                    }
+
+                                    .animate {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+
+                                        width: 322px;
+                                        height: 168px;
+
+                                        padding: 63px 24px;
+
+                                        background-color: rgba(243, 243, 33, 0.9);
+
+                                        font-family: "Roboto";
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        line-height: 28px;
+
+                                        letter-spacing: 0.03em;
+
+                                        color: #000000;
+
+                                        transform: translateX(100%);
+                                        transition: transform 300ms linear;
+                                    }
+
+                                    .text-wrapper:hover .animate {
+                                        transform: translateX(0%);
+                                    }
+                                </style>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/2.png" alt="">
-                    <div>
-                        <h3>Постер New Orlean vs Golden Star</h3>
-                        <p>Дизайн</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/2.png" alt="">
+                            <div>
+                                <h3>Постер New Orlean vs Golden Star</h3>
+                                <p>Дизайн</p>
+                            </div>
+                            <p class="animate">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Similique molestiae minima suscipit dolor dolorum quam corporis
+                                nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                laboriosam eos? Nemo molestiae tempore quas?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/3.png" alt="">
-                    <div>
-                        <h3>Ресторан Seafood</h3>
-                        <p>Додаток</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/3.png" alt="">
+                            <div>
+                                <h3>Ресторан Seafood</h3>
+                                <p>Додаток</p>
+                            </div>
+                            <p class="animate">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Similique molestiae minima suscipit dolor dolorum quam corporis
+                                nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                laboriosam eos? Nemo molestiae tempore quas?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/4.png" alt="">
-                    <div>
-                        <h3>Проекст Prime</h3>
-                        <p>Маркетинг</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/4.png" alt="">
+                            <div>
+                                <h3>Проекст Prime</h3>
+                                <p>Маркетинг</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/5.png" alt="">
-                    <div>
-                        <h3>Boxes</h3>
-                        <p>Додаток</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/5.png" alt="">
+                            <div>
+                                <h3>Boxes</h3>
+                                <p>Додаток</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/6.png" alt="">
-                    <div>
-                        <h3>Inspiration has no Borders</h3>
-                        <p>Веб-сайт</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/6.png" alt="">
+                            <div>
+                                <h3>Inspiration has no Borders</h3>
+                                <p>Веб-сайт</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/7.png" alt="">
-                    <div>
-                        <h3>LIMITED EDITION</h3>
-                        <p>Дизайн</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/7.png" alt="">
+                            <div>
+                                <h3>LIMITED EDITION</h3>
+                                <p>Дизайн</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/8.png" alt="">
-                    <div>
-                        <h3>ПроЄКт LAB</h3>
-                        <p>Маркетинг</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/8.png" alt="">
+                            <div>
+                                <h3>ПроЄКт LAB</h3>
+                                <p>Маркетинг</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
-                    <img src="./img/9.png" alt="">
-                    <div>
-                        <h3>GROWING BUSINESS</h3>
-                        <p>Додаток</p>
+                    <div class="wrapper">
+                        <div class="text-wrapper">
+                            <img src="./img/9.png" alt="">
+                            <div>
+                                <h3>GROWING BUSINESS</h3>
+                                <p>Додаток</p>
+                                <p class="animate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Similique molestiae minima suscipit dolor dolorum quam corporis
+                                    nam modi laboriosam porro. Fugiat voluptatum ipsum eligendi
+                                    laboriosam eos? Nemo molestiae tempore quas?
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
